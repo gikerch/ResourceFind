@@ -29,10 +29,13 @@ network-api v0.1
 
 请求参数说明 accesstoken ：请求的 token，即上一步中所获得的 token userip: 记录的 ip 地址 user_time: 记录的 unix 时间戳（例如2016-11-01 10：00：00 需要转换成时间戳 1477965600，单位是秒） ```
 
+
+
 返回参数说明 success: true 表示正确返回 add_time: 用户上线的时间 drop_time： 用户下线的时间 user_info: 用户的相关信息 user_encrypt: 学号/工号脱敏加密后的字符串，唯一 BMMC：部门信息，unicode编码。实例中解码后应为"经济与管理专业学位教育与培训中心"
 
 错误返回说明 success: fasle 表示返回错误 msg: 错误原因
 """
+
 
 import requests
 import time
